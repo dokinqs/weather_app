@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+html {
+  background: url('https://i.giphy.com/media/1hujy3a24Q3eM/giphy.webp'), black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+body {
+  margin: 0 10%;
+  padding: 30px 20px 1px;
+  font-size: 14px;
+  font-family: sans-serif;
+  text-align: center;
+  color: white;
+  background: rgba(0, 0, 0, .4);
+  font-family: 'Merriweather', sans-serif;
+}
+h1 {
+  margin: 0;
+  font-size: calc(24px + 3vw);
+}
+h3 {
+  font-size: calc(12px + 1vw);
+  margin-bottom: 0;
+}
+h5 {
+  margin: 0;
+  font-style: italic;
+  opacity: 0.7;
+}
+input {
+  padding: 10px;
+  margin: 10px;
+  width: calc(40px + 8vw);
+}
+button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  color: white;
+  background: black;
+  font-family: 'Merriweather', sans-serif;
+}
+button:active {
+  background: rgba(0, 0, 0, .4);
+}
+.error {
+  padding: 10px;
+  background: rgba(91, 2, 2, 0.5);
+}
+.weather__key {
+  font-size: 1vw;
+}
+p > .weather__value {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2vw;
+}
