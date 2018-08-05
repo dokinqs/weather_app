@@ -30,10 +30,6 @@ class App extends Component {
     const data = await api.json();
 
     if (city && country) {
-      console.log("length: " + city.length);
-      console.log("string?: " + (typeof city == "string"));
-      console.log(typeof city);
-
       this.setState({
         city: data.name,
         country: data.sys.country,
