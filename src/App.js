@@ -25,9 +25,9 @@ class App extends Component {
 
     // top secret
     // let key = config.API_KEY; 
-    // let API_KEY;
+    let key = process.env.API_KEY;
 
-    const api = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`);
+    const api = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${key}&units=imperial`);
     const data = await api.json();
 
     if (city && country) {
