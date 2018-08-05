@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Heading from "./components/Heading";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
-import config from "./config";
+// import config from "./config";
 
 class App extends Component {
   state = {
@@ -24,9 +24,10 @@ class App extends Component {
     } 
 
     // top secret
-    let key = config.API_KEY; 
+    // let key = config.API_KEY; 
+    // let API_KEY;
 
-    const api = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${key}&units=imperial`);
+    const api = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`);
     const data = await api.json();
 
     if (city && country) {
