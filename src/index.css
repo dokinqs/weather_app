@@ -1,58 +1,75 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
 html {
-  background: url('https://i.giphy.com/media/1hujy3a24Q3eM/giphy.webp'), black;
+  background: url('https://media.giphy.com/media/tQgB6lM6XCle8/source.gif');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  min-height: 650px;
 }
 body {
-  margin: 0 10%;
-  padding: 30px 20px 1px;
+  margin: 40px 10% 0px;
+  padding: 30px auto 60px;
   font-size: 14px;
   font-family: sans-serif;
   text-align: center;
-  color: white;
-  background: rgba(0, 0, 0, .4);
-  font-family: 'Merriweather', sans-serif;
+  color: rgb(50, 89, 131);
+  font-family: 'Poppins', sans-serif;
 }
+
 h1 {
-  margin: 0;
-  font-size: calc(24px + 3vw);
+  text-align: center;
+  padding-top: 2vh;
+  margin-bottom: 20px;
+  font-size: calc(30px + 2vw);
+  color: rgb(2, 36, 66);
 }
-h3 {
-  font-size: calc(12px + 1vw);
-  margin-bottom: 0;
-}
-h5 {
-  margin: 0;
-  font-style: italic;
-  opacity: 0.7;
+form {
+  margin-top: 12px;
 }
 input {
   padding: 10px;
   margin: 10px;
-  width: calc(40px + 8vw);
+  width: auto;
+  border-radius: 5px;
 }
 button {
-  padding: 10px;
-  margin: 10px;
-  font-size: 16px;
-  color: white;
-  background: black;
-  font-family: 'Merriweather', sans-serif;
+  padding: 5px;
+  margin-top: 3px;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(100, 151, 214, 0.3);
+  border-radius: 5px;
+}
+button:hover {
+  background: rgba(100, 142, 214, 0.6);
+  cursor: pointer;
 }
 button:active {
-  background: rgba(0, 0, 0, .4);
+  background: rgba(100, 142, 214, 0.8);
+  color: white;
 }
+
 .error {
-  padding: 10px;
-  background: rgba(91, 2, 2, 0.5);
+  color: rgb(2, 36, 66);
+  font-size: 20px;
+}
+.weather__info {
+  background-color: rgba(177, 202, 233, 0.3);
+  border-radius: 5px;
+  width: 35vw;
+  min-width: 300px;
+  margin: auto;
 }
 .weather__key {
   font-size: 1vw;
+  margin: 0px;
 }
 p > .weather__value {
   font-style: italic;
-  font-weight: bold;
-  font-size: 2vw;
+  font-size: calc(20px + 1vw);
+  color: rgb(2, 36, 66);
+}
+.up {
+  text-transform: uppercase;
 }

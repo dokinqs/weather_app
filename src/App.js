@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Heading from "./components/Heading";
 import Form from "./components/Form";
 import Weather from "./components/Weather";
 
@@ -45,7 +44,7 @@ class App extends Component {
         temperature: undefined,
         humidity: undefined,
         description: undefined,
-        error: "Please enter the values."
+        error: "Please enter correct values."
       });
     }
   }
@@ -57,11 +56,8 @@ class App extends Component {
           <div className="main">
             <div className="container">
               <div className="row">
-                <div className="title-container">
-                  <Heading />
-                </div>
                 <div className="form-container">
-                  <Form getWeather={this.getWeather} />
+                  <h1 className="title-container__title">Weather Lookup</h1>
                   <Weather 
                     city={this.state.city}
                     country={this.state.country}
@@ -70,6 +66,7 @@ class App extends Component {
                     description={this.state.description}
                     error={this.state.error}
                   />
+                  <Form getWeather={this.getWeather} />
                 </div>
               </div>
             </div>

@@ -2,13 +2,13 @@ import React from "react";
 
 const Form = props => (
         <form onSubmit={props.getWeather}>
-                City <input type="text" 
+                City / Zipcode <br /><input type="text" 
                                 name="city" 
-                                placeholder="Sydney, Seoul" /> 
+                                placeholder="10001, Tokyo" /> 
                 <br />
-                Country <input type="text" 
+                Country <br /><input type="text" 
                                 name="country" 
-                                placeholder="Australia, KR" />
+                                placeholder="US, Japan" />
                 <br />
                 <button>Submit</button>
         </form>
