@@ -29,7 +29,7 @@ class App extends Component {
 
     const data = await api.json();
 
-    if (city && country) {
+    if (data.name && data.sys.country != "IT") {
       this.setState({
         city: data.name,
         country: data.sys.country,
