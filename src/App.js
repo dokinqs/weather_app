@@ -4,7 +4,8 @@ import Form from "./components/Form";
 import Weather from "./components/Weather";
 // import config from "./config";
 
-const API_KEY = process.env.API_KEY;
+const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
+
 class App extends Component {
   state = {
     city: undefined,
@@ -14,20 +15,22 @@ class App extends Component {
     description: undefined,
     error: undefined
   }
+
   getWeather = async (e) => {
     e.preventDefault();
     let city = e.target.elements.city.value;
     let country = e.target.elements.country.value;
 
-    let isZipcode = /^\d{5}$/.test(city); 
-    if (isZipcode) {
-      country = 'us';
-    } 
+    // let isZipcode = /^\d{5}$/.test(city); 
+    // if (isZipcode) {
+    //   country = 'us';
+    // } 
 
-    // top secret
     // let key = config.API_KEY; 
 
+    // const api = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=New%20York%20City,US&appid=9877ff80423f9104017003346d44fe01&units=imperial`);
     const api = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${API_KEY}&units=imperial`);
+
     const data = await api.json();
 
     if (city && country) {
@@ -50,6 +53,7 @@ class App extends Component {
       });
     }
   }
+
   render() {
     return (
       <div>
