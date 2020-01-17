@@ -2,7 +2,6 @@ import React from "react";
 
 const Weather = props => (
 	<div className="weather__info">
-		<br />
 		{ props.city && props.country && 
 			<p className="weather__key">  
 				<span className="weather__value up"> { props.city }, { props.country }</span>
@@ -30,7 +29,6 @@ const Weather = props => (
 			<p className="weather__error">
 				<span className="error"> { props.error }</span>
 			</p> }
-		<br />
 	</div>
 );
 

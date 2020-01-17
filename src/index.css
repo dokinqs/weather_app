@@ -20,7 +20,7 @@ h1 {
   text-align: center;
   padding-top: 2vh;
   margin-bottom: 20px;
-  font-size: calc(30px + 2vw);
+  font-size: calc(34px + 2vw);
   color: rgb(2, 36, 66);
   font-weight: 500;
 }
@@ -61,7 +61,7 @@ button:active {
   border-radius: 5px;
   width: 35vw;
   min-width: 300px;
-  margin: auto;
+  margin: 15px auto;
 }
 .weather__key {
   font-size: calc(12px + 0.4vw);
