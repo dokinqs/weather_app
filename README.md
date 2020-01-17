@@ -1,6 +1,6 @@
 # OpenWeatherMap API and React.js
 
-<img width="200" alt="weather-phone" src="https://user-images.githubusercontent.com/22225317/72573392-815e2480-3893-11ea-8053-f0045ec9f0c4.jpg"> <img width="400" alt="weather-desktop" src="https://user-images.githubusercontent.com/22225317/72573388-7efbca80-3893-11ea-895a-b8cfc8ead068.jpg">
+<img width="200" alt="weather-mobile" src="https://user-images.githubusercontent.com/22225317/72583309-c2fec780-38b3-11ea-95b2-21f35db95c79.jpg"> <img width="400" alt="weather-laptop" src="https://user-images.githubusercontent.com/22225317/72583308-c1cd9a80-38b3-11ea-9429-52c861729120.jpg">
 
 Old Version
 

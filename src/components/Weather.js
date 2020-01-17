@@ -7,6 +7,9 @@ const Weather = props => (
 			<p className="weather__key">  
 				<span className="weather__value up"> { props.city }, { props.country }</span>
 			</p> }
+		{ props.icon &&
+			<img src={props.icon} alt=""/>
+		}
 		{ props.temperature && 
 			<p className="weather__key"> Temp:
 				<span className="weather__value"> { props.temperature } °F</span>
@@ -18,6 +21,10 @@ const Weather = props => (
 		{ props.description && 
 			<p className="weather__key">Conditions: 
 				<span className="weather__value"> { props.description }</span>
+			</p> }
+		{ props.wind && 
+			<p className="weather__key">Wind Speed:
+				<span className="weather__value"> { props.wind } mph</span>
 			</p> }
 		{ props.error && 
 			<p className="weather__error">
