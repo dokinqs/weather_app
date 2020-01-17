@@ -33,9 +33,9 @@ class App extends Component {
         city: data.name,
         country: data.sys.country,
         icon: data.weather[0].icon,
+        description: data.weather[0].main,
         temperature: Math.round(data.main.temp),
         humidity: data.main.humidity,
-        description: data.weather[0].main,
         wind: Math.round(data.wind.speed),
         error: ""
       });
@@ -44,9 +44,9 @@ class App extends Component {
         city: undefined,
         country: undefined,
         icon: undefined,
+        description: undefined,
         temperature: undefined,
         humidity: undefined,
-        description: undefined,
         wind: undefined,
         error: "Please enter correct values."
       });
@@ -68,9 +68,9 @@ class App extends Component {
                     city={this.state.city}
                     country={this.state.country}
                     icon={iconurl}
+                    description={this.state.description}
                     temperature={this.state.temperature} 
                     humidity={this.state.humidity}
-                    description={this.state.description}
                     wind={this.state.wind}
                     error={this.state.error}
                   />

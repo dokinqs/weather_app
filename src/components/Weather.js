@@ -10,17 +10,17 @@ const Weather = props => (
 		{ props.icon &&
 			<img src={props.icon} alt=""/>
 		}
+		{ props.description && 
+			<p className="weather__key">
+				<span className="weather__value"> { props.description }</span>
+			</p> }
 		{ props.temperature && 
-			<p className="weather__key"> Temp:
+			<p className="weather__key">
 				<span className="weather__value"> { props.temperature } °F</span>
 			</p> }
 		{ props.humidity && 
 			<p className="weather__key">Humidity: 
 				<span className="weather__value"> { props.humidity }%</span>
-			</p> }
-		{ props.description && 
-			<p className="weather__key">Conditions: 
-				<span className="weather__value"> { props.description }</span>
 			</p> }
 		{ props.wind && 
 			<p className="weather__key">Wind Speed:

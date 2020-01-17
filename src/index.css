@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins');
-
 html {
   background: url('https://media.giphy.com/media/tQgB6lM6XCle8/source.gif');
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
   min-height: 680px;
+  font-family: 'Poppins', sans-serif;
 }
 body {
   margin: 40px 10% 0px;
@@ -23,6 +22,7 @@ h1 {
   margin-bottom: 20px;
   font-size: calc(30px + 2vw);
   color: rgb(2, 36, 66);
+  font-weight: 500;
 }
 form {
   margin-top: 12px;
@@ -57,21 +57,26 @@ button:active {
   font-size: 20px;
 }
 .weather__info {
-  background-color: rgba(177, 202, 233, 0.3);
+  background-color: rgba(177, 202, 233, 0.4);
   border-radius: 5px;
   width: 35vw;
   min-width: 300px;
   margin: auto;
 }
 .weather__key {
-  font-size: 1vw;
+  font-size: calc(12px + 0.4vw);
   margin: 0px;
 }
-p > .weather__value {
-  font-style: italic;
+.weather__value {
   font-size: calc(20px + 0.5vw);
   color: rgb(2, 36, 66);
 }
 .up {
   text-transform: uppercase;
+  font-size: calc(28px + 0.5vw);
+}
+img {
+  outline-color: transparent;
+  outline-style: none;
+  box-shadow: none;
 }
