@@ -31,9 +31,9 @@ class App extends Component {
 
     if (data.name && data.sys.country != "IT") {
       this.setState({
+        icon: data.weather[0].icon,
         city: data.name,
         country: data.sys.country,
-        icon: data.weather[0].icon,
         description: data.weather[0].main,
         temperature: Math.round(data.main.temp),
         humidity: data.main.humidity,
@@ -42,9 +42,9 @@ class App extends Component {
       });
     } else {
       this.setState({
+        icon: undefined,
         city: undefined,
         country: undefined,
-        icon: undefined,
         description: undefined,
         temperature: undefined,
         humidity: undefined,
@@ -55,7 +55,7 @@ class App extends Component {
   }
 
   render() {
-    let iconurl = `https://openweathermap.org/img/w/${this.state.icon}.png`;
+    let iconurl = this.state.icon == undefined ? undefined : `https://openweathermap.org/img/w/${this.state.icon}.png`;
 
     return (
       <div>
@@ -64,11 +64,11 @@ class App extends Component {
             <div className="container">
               <div className="row">
                 <div className="form-container">
-                  <h1 className="title-container__title">Weather Lookup</h1>
+                  <h1 className="title-container__title">Weather</h1>
                   <Weather 
+                    icon={iconurl}
                     city={this.state.city}
                     country={this.state.country}
-                    icon={iconurl}
                     description={this.state.description}
                     temperature={this.state.temperature} 
                     humidity={this.state.humidity}

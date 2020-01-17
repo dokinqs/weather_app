@@ -2,13 +2,13 @@ import React from "react";
 
 const Weather = props => (
 	<div className="weather__info">
+		{ props.icon &&
+			<img src={props.icon} alt=""/>
+		}
 		{ props.city && props.country && 
 			<p className="weather__key">  
 				<span className="weather__value up"> { props.city }, { props.country }</span>
 			</p> }
-		{ props.icon &&
-			<img src={props.icon} alt=""/>
-		}
 		{ props.description && 
 			<p className="weather__key">
 				<span className="weather__value"> { props.description }</span>
