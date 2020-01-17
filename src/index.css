@@ -75,8 +75,10 @@ button:active {
   text-transform: uppercase;
   font-size: calc(28px + 0.5vw);
 }
-img {
+img.icon {
   outline-color: transparent;
   outline-style: none;
+  outline: none;
   box-shadow: none;
+  border: 0;
 }

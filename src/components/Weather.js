@@ -8,7 +8,7 @@ const Weather = props => (
 				<span className="weather__value up"> { props.city }, { props.country }</span>
 			</p> }
 		{ props.icon &&
-			<img src={props.icon} alt=""/>
+			<img className="icon" src={props.icon} alt=""/>
 		}
 		{ props.description && 
 			<p className="weather__key">
