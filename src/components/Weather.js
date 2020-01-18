@@ -2,28 +2,29 @@ import React from "react";
 
 const Weather = props => (
 	<div className="weather__info">
+		{ props.city && props.country && 
+			<p className="weather__key">  
+				<span className="location"> { props.city }, { props.country }</span>
+			</p> }
 		{ props.icon &&
 			<img src={props.icon} alt=""/>
 		}
-		{ props.city && props.country && 
-			<p className="weather__key">  
-				<span className="weather__value up"> { props.city }, { props.country }</span>
-			</p> }
 		{ props.description && 
-			<p className="weather__key">
-				<span className="weather__value"> { props.description }</span>
+			<p className="weather__key descr">
+				<span> { props.description }</span>
 			</p> }
-		{ props.temperature && 
+		{ props.description && props.temperature && 
 			<p className="weather__key">
-				<span className="weather__value"> { props.temperature } °F</span>
+				<span className="temp"> { props.temperature }</span>
+				<span className="temp" id="tempUnit"></span>
 			</p> }
 		{ props.humidity && 
 			<p className="weather__key">Humidity: 
-				<span className="weather__value"> { props.humidity }%</span>
+				<span> { props.humidity }%</span>
 			</p> }
 		{ props.wind && 
-			<p className="weather__key">Wind Speed:
-				<span className="weather__value"> { props.wind } mph</span>
+			<p className="weather__key">Wind:
+				<span className=""> { props.wind } mph</span>
 			</p> }
 		{ props.error && 
 			<p className="weather__error">

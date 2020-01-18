@@ -7,7 +7,7 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 body {
-  margin: 40px 10% 0px;
+  margin: 16vh 10% 0px;
   padding: 30px auto 60px;
   font-size: 14px;
   font-family: sans-serif;
@@ -21,15 +21,18 @@ h1 {
   margin-bottom: 20px;
   font-size: calc(30px + 2vw);
   font-weight: 500;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+}
+h3 {
+  margin: 0px;
 }
 form {
   margin: 12px auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: rgb(240, 255, 255, 0.4);
+  background-color: rgb(240, 255, 255, 0.5);
   border-radius: 10px;
-  width: 50vw;
+  width: 30vw;
   min-width: 300px;
 }
 input {
@@ -38,10 +41,11 @@ input {
   width: auto;
   border-radius: 5px;
   border: white;
+  color: rgb(96, 156, 194);
 }
 button {
-  padding: 10px;
-  margin-top: 3px;
+  padding: 6px;
+  margin-top: 5px;
   font-size: 14px;
   font-family: 'Poppins', sans-serif;
   background-color: rgba(100, 151, 214, 0.25);
@@ -58,20 +62,34 @@ button:active {
 }
 
 .error {
-  color: rgb(2, 36, 66);
+  color: rgb(2, 36, 66, 0.6);
   font-size: 20px;
+  font-style: italic;
 }
 .weather__info {
-  margin: 40px auto;
+  margin: 10px auto 40px;
 }
 .weather__key {
   font-size: calc(12px + 0.4vw);
-  margin: 0px;
+  margin: 2px;
 }
-.weather__value {
-  font-size: calc(20px + 0.5vw);
-  color: rgb(2, 36, 66);
+.descr {
+  margin-top: -9px;
+  margin-bottom: 0px;
 }
-.up {
-  font-size: calc(28px + 0.5vw);
+.location, 
+.temp {
+  font-size: calc(36px + 1vw);
+}
+.toggleSection {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.clickableUnit:hover {
+  cursor: pointer;
+  color: white;
+}
+.activeUnit {
+  color: white;
 }
