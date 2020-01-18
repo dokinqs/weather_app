@@ -55,7 +55,6 @@ class App extends Component {
         temperature: undefined,
         humidity: undefined,
         wind: undefined,
-        isImperial: true,
         error: "Please enter correct values."
       });
     }
